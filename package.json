@@ -1,0 +1,52 @@
+{
+  "name": "clean-node-package-typescript",
+  "private": false,
+  "version": "1.0.0",
+  "description": "A simple template for creating a Node.js package with TypeScript, Vite, Vitest and ESLint",
+  "homepage": "https://github.com/Xkonti/clean-node-package-typescript#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xkonti/clean-node-package-typescript.git"
+  },
+  "keywords": [
+    "typescript",
+    "vite",
+    "vitest",
+    "eslint",
+    "template"
+  ],
+  "author": "Beniamin (Xkonti) Dudek <xkonti@xkonti.tech>",
+  "bugs": {
+    "url": "https://github.com/Xkonti/clean-node-package-typescript/issues"
+  },
+  "type": "module",
+  "main": "./dist/clean-node-package-typescript.umd.cjs",
+  "module": "./dist/clean-node-package-typescript.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/clean-node-package-typescript.js",
+      "require": "./dist/clean-node-package-typescript.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && vite build",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "eslint": "^8.46.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.7",
+    "vite-plugin-dts": "^3.4.0",
+    "vite-plugin-eslint": "^1.8.1",
+    "vitest": "^0.33.0"
+  }
+}
