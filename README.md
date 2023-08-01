@@ -12,11 +12,11 @@ Furthermore, a built-in GitHub Actions workflow ensures quality control for ever
 
 Though this project has been initialized using [pnpm](https://pnpm.io/), you're welcome to utilize your preferred package manager.
 
-| Pnpm command      | Npm command       | Description               |
-| ------------------------------------- | ------------------------- |
-| `pnpm install`    | `npm install`     | Install dependencies      |
-| `pnpm test`       | `npm test`        | Execute tests             |
-| `pnpm test:watch` | `npm test:watch`  | Run tests in watch mode   |
-| `pnpm build`      | `npm build`       | Build the package         |
+| Pnpm command      | Yarn command      | Npm command       | Description               |
+| ----------------- | ----------------- | ----------------- | ------------------------- |
+| `pnpm install`    | `yarn install`    | `npm install`     | Install dependencies      |
+| `pnpm test`       | `yarn test`       | `npm test`        | Execute tests             |
+| `pnpm test:watch` | `yarn test:watch` | `npm test:watch`  | Run tests in watch mode   |
+| `pnpm build`      | `yarn build`      | `npm build`       | Build the package         |
 
 By default, the package is configured to build to the `dist` folder. If you wish to modify this, adjustments can be made in the `vite.config.ts` file. Additionally, type definitions are included in the build, ensuring compatibility with other TypeScript projects.
